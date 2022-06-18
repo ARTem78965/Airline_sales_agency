@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Представление_билета" targetNamespace="http://tempuri.org/Представление_билета.xsd" xmlns:mstns="http://tempuri.org/Представление_билета.xsd" xmlns="http://tempuri.org/Представление_билета.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Users" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Users (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Курсовая_работа_1.Properties.Settings.GlobalReference.Default.Users" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="БилетTableAdapter" GeneratorDataComponentClassName="БилетTableAdapter" Name="Билет" UserDataComponentName="БилетTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Users (Settings)" DbObjectName="db_registr.dbo.Билет" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, Number, Fam, Name, Otch, Money, Passport, Kod_reis, Kod_park, Otkuda, Do_kuda, Number_reis, date_otp, time_otp, date_pri, time_pri, Numb_park, Airplanec FROM dbo.Билет</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Fam" DataSetColumn="Fam" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Otch" DataSetColumn="Otch" />
+              <Mapping SourceColumn="Money" DataSetColumn="Money" />
+              <Mapping SourceColumn="Passport" DataSetColumn="Passport" />
+              <Mapping SourceColumn="Kod_reis" DataSetColumn="Kod_reis" />
+              <Mapping SourceColumn="Kod_park" DataSetColumn="Kod_park" />
+              <Mapping SourceColumn="Otkuda" DataSetColumn="Otkuda" />
+              <Mapping SourceColumn="Do_kuda" DataSetColumn="Do_kuda" />
+              <Mapping SourceColumn="Number_reis" DataSetColumn="Number_reis" />
+              <Mapping SourceColumn="date_otp" DataSetColumn="date_otp" />
+              <Mapping SourceColumn="time_otp" DataSetColumn="time_otp" />
+              <Mapping SourceColumn="date_pri" DataSetColumn="date_pri" />
+              <Mapping SourceColumn="time_pri" DataSetColumn="time_pri" />
+              <Mapping SourceColumn="Numb_park" DataSetColumn="Numb_park" />
+              <Mapping SourceColumn="Airplanec" DataSetColumn="Airplanec" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Представление_билета" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Представление_билета" msprop:Generator_UserDSName="Представление_билета">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Билет" msprop:Generator_TableClassName="БилетDataTable" msprop:Generator_TableVarName="tableБилет" msprop:Generator_TablePropName="Билет" msprop:Generator_RowDeletingName="БилетRowDeleting" msprop:Generator_RowChangingName="БилетRowChanging" msprop:Generator_RowEvHandlerName="БилетRowChangeEventHandler" msprop:Generator_RowDeletedName="БилетRowDeleted" msprop:Generator_UserTableName="Билет" msprop:Generator_RowChangedName="БилетRowChanged" msprop:Generator_RowEvArgName="БилетRowChangeEvent" msprop:Generator_RowClassName="БилетRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:long" />
+              <xs:element name="Fam" msprop:Generator_ColumnVarNameInTable="columnFam" msprop:Generator_ColumnPropNameInRow="Fam" msprop:Generator_ColumnPropNameInTable="FamColumn" msprop:Generator_UserColumnName="Fam">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Otch" msprop:Generator_ColumnVarNameInTable="columnOtch" msprop:Generator_ColumnPropNameInRow="Otch" msprop:Generator_ColumnPropNameInTable="OtchColumn" msprop:Generator_UserColumnName="Otch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Money" msprop:Generator_ColumnVarNameInTable="columnMoney" msprop:Generator_ColumnPropNameInRow="Money" msprop:Generator_ColumnPropNameInTable="MoneyColumn" msprop:Generator_UserColumnName="Money" type="xs:decimal" />
+              <xs:element name="Passport" msprop:Generator_ColumnVarNameInTable="columnPassport" msprop:Generator_ColumnPropNameInRow="Passport" msprop:Generator_ColumnPropNameInTable="PassportColumn" msprop:Generator_UserColumnName="Passport">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kod_reis" msprop:Generator_ColumnVarNameInTable="columnKod_reis" msprop:Generator_ColumnPropNameInRow="Kod_reis" msprop:Generator_ColumnPropNameInTable="Kod_reisColumn" msprop:Generator_UserColumnName="Kod_reis" type="xs:int" />
+              <xs:element name="Kod_park" msprop:Generator_ColumnVarNameInTable="columnKod_park" msprop:Generator_ColumnPropNameInRow="Kod_park" msprop:Generator_ColumnPropNameInTable="Kod_parkColumn" msprop:Generator_UserColumnName="Kod_park" type="xs:int" />
+              <xs:element name="Otkuda" msprop:Generator_ColumnVarNameInTable="columnOtkuda" msprop:Generator_ColumnPropNameInRow="Otkuda" msprop:Generator_ColumnPropNameInTable="OtkudaColumn" msprop:Generator_UserColumnName="Otkuda">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Do_kuda" msprop:Generator_ColumnVarNameInTable="columnDo_kuda" msprop:Generator_ColumnPropNameInRow="Do_kuda" msprop:Generator_ColumnPropNameInTable="Do_kudaColumn" msprop:Generator_UserColumnName="Do_kuda">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number_reis" msprop:Generator_ColumnVarNameInTable="columnNumber_reis" msprop:Generator_ColumnPropNameInRow="Number_reis" msprop:Generator_ColumnPropNameInTable="Number_reisColumn" msprop:Generator_UserColumnName="Number_reis" type="xs:long" />
+              <xs:element name="date_otp" msprop:Generator_ColumnVarNameInTable="columndate_otp" msprop:Generator_ColumnPropNameInRow="date_otp" msprop:Generator_ColumnPropNameInTable="date_otpColumn" msprop:Generator_UserColumnName="date_otp" type="xs:dateTime" />
+              <xs:element name="time_otp" msprop:Generator_ColumnVarNameInTable="columntime_otp" msprop:Generator_ColumnPropNameInRow="time_otp" msprop:Generator_ColumnPropNameInTable="time_otpColumn" msprop:Generator_UserColumnName="time_otp" type="xs:duration" />
+              <xs:element name="date_pri" msprop:Generator_ColumnVarNameInTable="columndate_pri" msprop:Generator_ColumnPropNameInRow="date_pri" msprop:Generator_ColumnPropNameInTable="date_priColumn" msprop:Generator_UserColumnName="date_pri" type="xs:dateTime" />
+              <xs:element name="time_pri" msprop:Generator_ColumnVarNameInTable="columntime_pri" msprop:Generator_ColumnPropNameInRow="time_pri" msprop:Generator_ColumnPropNameInTable="time_priColumn" msprop:Generator_UserColumnName="time_pri" type="xs:duration" />
+              <xs:element name="Numb_park" msprop:Generator_ColumnVarNameInTable="columnNumb_park" msprop:Generator_ColumnPropNameInRow="Numb_park" msprop:Generator_ColumnPropNameInTable="Numb_parkColumn" msprop:Generator_UserColumnName="Numb_park" type="xs:long" />
+              <xs:element name="Airplanec" msprop:Generator_ColumnVarNameInTable="columnAirplanec" msprop:Generator_ColumnPropNameInRow="Airplanec" msprop:Generator_ColumnPropNameInTable="AirplanecColumn" msprop:Generator_UserColumnName="Airplanec">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Билет" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
